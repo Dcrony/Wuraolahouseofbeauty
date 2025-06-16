@@ -274,13 +274,13 @@
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="name form-control bg-transparent p-4"
+                                    <input type="text" name="name" id="name class="name form-control bg-transparent p-4"
                                         placeholder="Your Name" required="required" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="email form-control bg-transparent p-4"
+                                    <input type="email" name="email" id="email" class="email form-control bg-transparent p-4"
                                         placeholder="Your Email" required="required" />
                                 </div>
                             </div>
@@ -722,8 +722,8 @@
                     console.log('Form submitted');
 
                     // Get form data
-                    var name = $('input[name="name"]').val();
-                    var email = $('input[name="email"]').val();
+                    var name = $('#name').val();
+                    var email = $('#email').val();
                     var date = $('input[name="date"]').val();
                     var time = $('input[name="time"]').val();
                     var service = $('select[name="service"]').val();
